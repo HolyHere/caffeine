@@ -1,0 +1,129 @@
+body .background_header_first_section .first_preview_section button, header .header_container :nth-child(3) button {
+  border: none;
+  border-radius: 24px;
+  background-color: rgb(249, 192, 106);
+}
+
+header {
+  padding: 20px 40px;
+  width: 100%;
+}
+header .header_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 1180px;
+  margin: auto;
+}
+header .header_container h3 {
+  font-family: "Clicker Script";
+  font-weight: 400;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+}
+header .header_container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+header .header_container nav p {
+  font: 500 14px "Playfair Display";
+  color: rgb(255, 255, 255);
+}
+header .header_container :nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 35px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+header .header_container :nth-child(3) p {
+  font: 500 14px "Playfair Display";
+  color: rgb(255, 255, 255);
+}
+header .header_container :nth-child(3) button {
+  font-family: "Playfair Display";
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(30, 30, 30);
+  padding: 15px 27px;
+}
+
+body .background_header_first_section .first_preview_section {
+  max-width: 1180px;
+  margin: auto;
+  padding: 115px 0px 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .background_header_first_section .first_preview_section :nth-child(1) {
+  font-family: "Playfair Display";
+  font-weight: 500;
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+}
+body .background_header_first_section .first_preview_section h2 {
+  font-family: "Clicker Script";
+  font-weight: 400;
+  font-size: 220px;
+  color: rgb(255, 255, 255);
+}
+body .background_header_first_section .first_preview_section :nth-child(3) {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  line-height: 34px;
+  max-width: 527px;
+}
+body .background_header_first_section .first_preview_section button {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(30, 30, 30);
+  margin-top: 34px;
+  padding: 14px 27px;
+}

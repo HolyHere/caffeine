@@ -1,0 +1,71 @@
+@import "variable.scss";
+
+body .background_header_first_section {
+  @include image(url(../svg/coffee_image.png), 100%, 100%, no-repeat, cover);
+}
+
+header {
+  padding: 20px 40px;
+  width: 100%;
+
+  .header_container {
+    @include flex-box(flex, space-between, center, row, 40px);
+    max-width: 1180px;
+    margin: auto;
+
+    h3 {
+      @include font-all("Clicker Script", 400, 35px, $white-font-color);
+    }
+
+    nav {
+      @include flex-box(flex, space-between, center, row, 40px);
+
+      p {
+        font: $header-font-style;
+        color: $white-font-color;
+      }
+    }
+    :nth-child(3) {
+      @include flex-box(flex, space-between, center, row, 35px);
+
+      p {
+        font: $header-font-style;
+        color: $white-font-color;
+      }
+
+      button {
+        @extend %button-style;
+        @include font-all("Playfair Display", 500, 14px, $button-font-color);
+        padding: 15px 27px;
+      }
+    }
+  }
+}
+
+body .background_header_first_section .first_preview_section {
+  max-width: 1180px;
+  margin: auto;
+  padding: 115px 40px 95px;
+  @include flex-box(flex, flex-start, flex-start, column, 0px);
+
+  :nth-child(1) {
+    @include font-all("Playfair Display", 500, 22px, $white-font-color);
+  }
+
+  h2 {
+    @include font-all("Clicker Script", 400, 220px, $white-font-color);
+  }
+
+  :nth-child(3) {
+    @include font-all("Playfair Display", 400, 20px, $white-font-color);
+    line-height: 34px;
+    max-width: 527px;
+  }
+
+  button {
+    @include font-all("Playfair Display", 700, 16px, $button-font-color);
+    @extend %button-style;
+    margin-top: 34px;
+    padding: 14px 27px;
+  }
+}
