@@ -8,20 +8,176 @@ main article .second_section {
   .second_container {
     @include flex-box(flex, start, start, column, 29px);
     max-width: 585px;
-    h3 { 
-      @include font-all('Playfair Display', 700, 54px, $main_h3_font_color);
+    h3 {
+      @include font-all("Playfair Display", 700, 54px, $main_h3_font_color);
     }
-    p { 
-      @include font-all('Playfair Display', 400, 20px, $main_p_font_color);
+    p {
+      @include font-all("Playfair Display", 400, 20px, $main_p_font_color);
       line-height: 34px;
     }
-    button { 
+    button {
       @extend %button-style;
-      @include font-all('Playfair Display', 700, 16px, $button-font-color);
+      @include font-all("Playfair Display", 700, 16px, $button-font-color);
       padding: 14px 24px 13px 23px;
     }
   }
   .image {
-    @include image_html_properties(500px, 100%, contain)
+    @include image_html_properties(500px, 100%, contain);
+  }
+}
+
+// вторая секция
+
+main article .third_section {
+  margin-top: 82px;
+  width: 100%;
+  background-color: $main-background-color;
+  padding: 0px 93px;
+  .third_container {
+    @include flex-box(flex, flex-start, center, column, 0px);
+    flex-wrap: wrap;
+    max-width: 1180px;
+    margin: auto;
+    h3 {
+      @include font-all("Playfair Display", 700, 54px, $main_h3_font_color);
+      text-align: center;
+    }
+    .p_2 {
+      margin-top: 16px;
+      @include font-all("Playfair Display", 400, 20px, $main_p_font_color);
+      line-height: 34px;
+      text-align: center;
+    }
+    .elements_container {
+      margin-top: 32px;
+      @include flex-box(flex, center, center, row, 40px 20px);
+      flex-wrap: wrap;
+      img {
+        @include image_html_properties(280px, 100%, contain);
+      }
+      .block {
+        position: relative;
+        max-width: 280px;
+        border: $block_border_style;
+        border-top: none;
+        background-color: $block_backgroud_color;
+        padding-bottom: 42px;
+        @include flex-box(flex, center, center, column, 6px);
+        h3 {
+          @include font-all("Playfair Display", 700, 22px, $main_h3_font_color);
+        }
+        & :nth-child(3) {
+          @include font-all(
+            "Playfair Display",
+            400,
+            16px,
+            $block_p2_font_color
+          );
+        }
+        & :nth-child(4) {
+          @include font-all("Playfair Display", 700, 18px, $main_h3_font_color);
+        }
+        button {
+          @include position_style(absolute, -24px);
+          @extend %button-style;
+          padding: 14px 26px 13px;
+          @include font-all("Playfair Display", 700, 16px, $button-font-color);
+        }
+      }
+    }
+  }
+}
+
+// четвёртая секция
+
+main article .four_section {
+  margin-top: 106px;
+  width: 100%;
+  background-color: $main-background-color;
+  padding: 0px 93px;
+  .four_container {
+    max-width: 1180px;
+    margin: auto;
+    @include flex-box(flex, flex-start, center, column, 0px);
+    h3 {
+      @include font-all("Playfair Display", 700, 54px, $main_h3_font_color);
+    }
+    .four_description {
+      margin-top: 16px;
+      @include font-all("Playfair Display", 400, 20px, $main_p_font_color);
+    }
+    .block_container {
+      @include flex-box(flex, center, center, row, 20px);
+      flex-wrap: wrap;
+      margin-top: 32px;
+
+      .four_block {
+        padding: 36px 0px;
+        width: 280px;
+        background-color: $four_block_backgroud_color_default;
+        border: $block_border_style;
+        @include flex-box(flex, flex-start, center, column, 0px);
+        &.active {
+          background-color: $four_block_backgroud_color;
+          border: 1px solid rgba(255, 238, 216, 1);
+        }
+        .image_1 {
+          @include image(
+            url(../svg/coffee-beans_1.svg),
+            88px,
+            88px,
+            no-repeat,
+            contain
+          );
+        }
+        .image_2 {
+          @include image(url(../svg/badge.svg), 88px, 88px, no-repeat, contain);
+        }
+        .image_3 {
+          @include image(
+            url(../svg/coffee-cup.svg),
+            88px,
+            88px,
+            no-repeat,
+            contain
+          );
+        }
+        .image_4 {
+          @include image(
+            url(../svg/best-price.svg),
+            88px,
+            88px,
+            no-repeat,
+            contain
+          );
+        }
+        h4 {
+          margin-top: 25px;
+          text-align: center;
+          @include font-all("Playfair Display", 700, 28px, $main_h3_font_color);
+        }
+        p {
+          max-width: 201px;
+          margin-top: 8px;
+          text-align: center;
+          @include font-all("Playfair Display", 400, 20px, $main_p_font_color);
+        }
+      }
+    }
+    span {
+      margin-top: 32px;
+      text-align: center;
+      @include font-all("Playfair Display", 400, 20px, $main_p_font_color);
+    }
+    h4 {
+      text-align: center;
+      @include font-all("Playfair Display", 700, 30px, $main_h3_font_color);
+    }
+    button { 
+      margin-top: 24px;
+      @extend %button-style;
+      @include font-all("Playfair Display", 700, 16px, $button-font-color);
+      padding: 14px 41px 13px;
+    }
   }
 }

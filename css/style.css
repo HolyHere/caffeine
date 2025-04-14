@@ -1,10 +1,10 @@
-main article .second_section .second_container button, body .background_header_first_section .first_preview_section button, header .header_container :nth-child(3) button {
+main article .four_section .four_container button, main article .third_section .third_container .elements_container .block button, main article .second_section .second_container button, body .background_header_first_section .first_preview_section button, header .header_container :nth-child(3) button {
   border: none;
   border-radius: 24px;
   background-color: rgb(249, 192, 106);
 }
 
-main article .second_section .second_container button, body .background_header_first_section .first_preview_section button, header .header_container :nth-child(3) button {
+main article .four_section .four_container button, main article .third_section .third_container .elements_container .block button, main article .second_section .second_container button, body .background_header_first_section .first_preview_section button, header .header_container :nth-child(3) button {
   border: none;
   border-radius: 24px;
   background-color: rgb(249, 192, 106);
@@ -142,7 +142,7 @@ body .background_header_first_section .first_preview_section button {
   padding: 14px 27px;
 }
 
-main article .second_section .second_container button, header .header_container :nth-child(3) button, body .background_header_first_section .first_preview_section button {
+main article .four_section .four_container button, main article .third_section .third_container .elements_container .block button, main article .second_section .second_container button, header .header_container :nth-child(3) button, body .background_header_first_section .first_preview_section button {
   border: none;
   border-radius: 24px;
   background-color: rgb(249, 192, 106);
@@ -209,6 +209,272 @@ main article .second_section .image {
   max-height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+main article .third_section {
+  margin-top: 82px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 0px 93px;
+}
+main article .third_section .third_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1180px;
+  margin: auto;
+}
+main article .third_section .third_container h3 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 54px;
+  color: rgb(96, 56, 9);
+  text-align: center;
+}
+main article .third_section .third_container .p_2 {
+  margin-top: 16px;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(112, 112, 112);
+  line-height: 34px;
+  text-align: center;
+}
+main article .third_section .third_container .elements_container {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 40px 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+main article .third_section .third_container .elements_container img {
+  max-width: 280px;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main article .third_section .third_container .elements_container .block {
+  position: relative;
+  max-width: 280px;
+  border: 1px solid rgba(249, 192, 106, 0.42);
+  border-top: none;
+  background-color: rgb(255, 249, 241);
+  padding-bottom: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6px;
+}
+main article .third_section .third_container .elements_container .block h3 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 22px;
+  color: rgb(96, 56, 9);
+}
+main article .third_section .third_container .elements_container .block :nth-child(3) {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(30, 30, 30);
+}
+main article .third_section .third_container .elements_container .block :nth-child(4) {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 18px;
+  color: rgb(96, 56, 9);
+}
+main article .third_section .third_container .elements_container .block button {
+  position: absolute;
+  bottom: -24px;
+  padding: 14px 26px 13px;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(30, 30, 30);
+}
+
+main article .four_section {
+  margin-top: 106px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 0px 93px;
+}
+main article .four_section .four_container {
+  max-width: 1180px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0px;
+}
+main article .four_section .four_container h3 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 54px;
+  color: rgb(96, 56, 9);
+}
+main article .four_section .four_container .four_description {
+  margin-top: 16px;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(112, 112, 112);
+}
+main article .four_section .four_container .block_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 32px;
+}
+main article .four_section .four_container .block_container .four_block {
+  padding: 36px 0px;
+  width: 280px;
+  background-color: rgb(255, 249, 241);
+  border: 1px solid rgba(249, 192, 106, 0.42);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0px;
+}
+main article .four_section .four_container .block_container .four_block.active {
+  background-color: rgb(255, 238, 216);
+  border: 1px solid rgb(255, 238, 216);
+}
+main article .four_section .four_container .block_container .four_block .image_1 {
+  background-image: url(../svg/coffee-beans_1.svg);
+  width: 88px;
+  height: 88px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+main article .four_section .four_container .block_container .four_block .image_2 {
+  background-image: url(../svg/badge.svg);
+  width: 88px;
+  height: 88px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+main article .four_section .four_container .block_container .four_block .image_3 {
+  background-image: url(../svg/coffee-cup.svg);
+  width: 88px;
+  height: 88px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+main article .four_section .four_container .block_container .four_block .image_4 {
+  background-image: url(../svg/best-price.svg);
+  width: 88px;
+  height: 88px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+main article .four_section .four_container .block_container .four_block h4 {
+  margin-top: 25px;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 28px;
+  color: rgb(96, 56, 9);
+}
+main article .four_section .four_container .block_container .four_block p {
+  max-width: 201px;
+  margin-top: 8px;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(112, 112, 112);
+}
+main article .four_section .four_container span {
+  margin-top: 32px;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(112, 112, 112);
+}
+main article .four_section .four_container h4 {
+  text-align: center;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(96, 56, 9);
+}
+main article .four_section .four_container button {
+  margin-top: 24px;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(30, 30, 30);
+  padding: 14px 41px 13px;
 }
 
 * {
