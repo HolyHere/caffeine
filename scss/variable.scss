@@ -1,6 +1,7 @@
-  // TODO: extend на mixin, стили position top
+// TODO: extend на mixin, стили position top
 
 
+$button-backgroud: rgba(249, 192, 106, 1);
 $main-background-color: rgba(255, 255, 255, 1);
 $block_backgroud_color: rgba(255, 249, 241, 1);
 $four_block_backgroud_color: rgba(255, 238, 216, 1);
@@ -21,11 +22,18 @@ $block_border_style: 1px solid rgba(249, 192, 106, 0.42);
   bottom: $top;
 }
 
+@mixin position_top_left($ps, $top, $left) { 
+  position: $ps;
+  top: $top;
+  left: $left;
+}
+
 %button-style {
   border: none;
   border-radius: 24px;
-  background-color: rgba(249, 192, 106, 1);
+  background-color: $button-backgroud;
 }
+
 
 @mixin image_html_properties($mw, $mh, $of) {
   max-width: $mw;
